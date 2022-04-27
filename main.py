@@ -129,7 +129,7 @@ app.layout = html.Div(
 
                                         To learn more about 
                                         the project, please visit the 
-                                        [project repository](https://github.com/).
+                                        [project repository](https://github.com/sidx255/FaceMaskDetection).
                                         """
                                     )
                                 )

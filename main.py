@@ -45,7 +45,7 @@ app.layout = html.Div(
                         html.Div(
                             id="header-section",
                             children=[
-                                html.H4("Mask Detection with Alarm System"),
+                                html.H4("Mask Detection with Alarm System using IoT and CV"),
                                 html.P(
                                     "To get started, select whether you want to detect an image or webcam feed, "
                                     "and choose the model and the confidence level of your face detector. "
@@ -107,16 +107,14 @@ app.layout = html.Div(
                                 dcc.Markdown(
                                     children=dedent(
                                         """
-                                        ##### What is this?
+                                        ##### ABOUT
             
                                         This project was made for CSE3009 EPJ by Siddharth and Chaitanya.
                                         This app detects human faces and proper mask wearing in images and webcam 
-                                        streams. Under the COVID-19 pandemic, the demand for an effective mask 
-                                        detection on embedded systems of limited computing capabilities has surged.
-                                        Trained on MobileNetV2, the app is computationally efficient to deploy to 
+                                        streams. Trained on MobileNetV2, the app is computationally efficient to deploy to 
                                         help control the spread of the disease.
                                         
-                                        ##### More about this app
+                                        ##### MODELS
             
                                         The MFN Model is capable of detecting 3 scenarios: 
                                         (1) incorrect mask wearing

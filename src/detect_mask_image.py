@@ -125,15 +125,15 @@ def main():
         raise ValueError("Please provide a valid confidence value between 0 and 1 (inclusive).")
 
     # Initialize model save path
-    mask_detector_model_path = "./mask_detector_models/mask_detector_" + args.model + ".h5"
+    mask_detector_model_path = "C:/Users/Siddharth/Desktop/IoT/project/mask_detector_models/mask_detector_" + args.model + ".h5"
     confidence_threshold = args.confidence
     print("Mask detector save path: " + mask_detector_model_path)
     print("Face detector thresholding confidence: " + str(confidence_threshold))
 
     # Load the face detector model from disk
     print("[INFO] loading face detector model...")
-    prototxt_path = "./face_detector_model/deploy.prototxt"
-    weights_path = "./face_detector_model/res10_300x300_ssd_iter_140000.caffemodel"
+    prototxt_path = "C:/Users/Siddharth/Desktop/IoT/project/face_detector_model/deploy.prototxt"
+    weights_path = "C:/Users/Siddharth/Desktop/IoT/project/face_detector_model/res10_300x300_ssd_iter_140000.caffemodel"
     face_detector = cv2.dnn.readNet(prototxt_path, weights_path)
 
     # Load the face mask detector model from disk
